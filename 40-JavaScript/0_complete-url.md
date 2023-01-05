@@ -2,4 +2,4 @@
 <p>https://www.vanillajavascriptprojects.com/</p>
 
 <h3>키워드</h3>
-<p>[https://www.vanillajavascriptprojects.com/](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)</p>
+<p>https://www.freecodecamp.org/news/javascript-projects-for-beginners/</p>
