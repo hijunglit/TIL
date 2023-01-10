@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <h1>반응형 네이게이션 구현</h1>
     <p>웹사이트에서 아주 많이 사용 되는 기능이다.</p>
     <h3>주요 사용 함수</h3>
@@ -23,3 +32,5 @@
             }
         </li>
     </ul>
+</body>
+</html>
