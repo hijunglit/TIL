@@ -43,7 +43,7 @@ aside.sidebar {
     transform: translateX(0%);
 }
 
-display grid  속성을 부여하고 메뉴가 나올때와 닫힐 때를 transform 속성의 translate 으로 조작한다.
+2.display grid  속성을 부여하고 메뉴가 나올때와 닫힐 때를 transform 속성의 translate 으로 조작한다.
 
 <p>js 소스</p>
 const closeMenu = document.querySelector(".close");
@@ -59,4 +59,4 @@ function hideMenu() {
 toggleBtn.addEventListener("click", visibleMenu);
 closeMenu.addEventListener("click", hideMenu);
 
-classList.toggle(), classList.remove() 함수로 show 클래스를 부여하고 제거하며 사이드 메뉴를 제어한다.
+3. classList.toggle(), classList.remove() 함수로 show 클래스를 부여하고 제거하며 사이드 메뉴를 제어한다.
