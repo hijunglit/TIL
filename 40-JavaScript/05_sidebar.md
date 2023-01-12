@@ -17,6 +17,7 @@
                 <li><a href="#">contact</a></li>
             </ul>
         </nav>
+    
         <ul class="socialLink">
             <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
