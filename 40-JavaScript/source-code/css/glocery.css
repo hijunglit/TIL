@@ -38,6 +38,14 @@
     padding: 3rem 0;
     transition: all 0.3s ease-in-out;
 }
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+.alert-success {
+    color: #721c24;
+    background: #d4edda;
+}
 .title {
     font-family: var(--roboto-sans);
     font-weight: 600;
@@ -70,7 +78,30 @@
     text-transform: capitalize;
     font-size: var(--small-size);
     letter-spacing: .2rem;
+    cursor: pointer;
 }
+#form {
+    margin-bottom: 2rem;
+}
+
+.list-container {
+    visibility: hidden;
+}
+.show-container {
+    visibility: visible;
+}
+.grocery-list li {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.button-container {
+    display: flex;
+}
+.edit {color: hsl(125, 67%, 44%); cursor: pointer;}
+.delete {color: var(--cherry-color); cursor: pointer;}
 .clear-button > button{
     border: none;
     background: transparent;

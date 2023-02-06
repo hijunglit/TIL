@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glocery</title>
+    <!-- font-awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/glocery.css">
 </head>
 <body>
@@ -20,24 +25,24 @@
                         name="text" 
                         placeholder="e.g.eggs"
                     />
-                    <button type="submit">submit</button>
+                    <button type="submit" class="submit-button">submit</button>
                 </div>
             </form>
             <div class="list-container">
-                <ul>
-                    <li>
-                        <div class="list-item-container">
-                            <p></p>
-                            <div class="edit">
-                                <span></span>
-                                <span></span>
-                            </div>
+                <ul class="grocery-list">
+                    <!-- <p></p>
+                    <div class="button-container">
+                        <div class="edit">
+                            <i class="fas fa-edit"></i>
                         </div>
-                    </li>
+                        <div class="delete">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div> -->
                 </ul>
             </div>
             <div class="clear-button">
-                <button>clear items</button>
+                <button class="clear-btn">clear items</button>
             </div>
         </div>
     </div>
