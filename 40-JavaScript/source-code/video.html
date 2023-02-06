@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="place-holder">
+        <img src="https://vannilla-js-basic-project-9-video-preloader.netlify.app/preloader.gif" alt="lazy load">
+    </div>
+    <div class="container">
+        <section class="video-container">
+            <video autoplay loop onloadeddata="loadData()" id="video">
+                <source src="https://vannilla-js-basic-project-9-video-preloader.netlify.app/video.mp4">
+            </video>
+        </section>
+        <div class="background-overlay"></div>
+        <section class="content">
+            <h1>video project</h1>
+            <label for="with-warrenty" class="switch-container">
+                <input hidden type="checkbox" id="with-warrenty">
+                <div class="switch-bg"></div>
+                <div class="round-box"></div>
+                <div class="switch-left">
+                    <span>play</span>
+                </div>
+                <div class="switch-right">
+                    <span>pause</span>
+                </div>
+            </label>
+        </section>
+    </div>
+    <script src="./js/video.js"></script>
+</body>
+</html>

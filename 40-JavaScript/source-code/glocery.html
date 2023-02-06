@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glocery</title>
+    <link rel="stylesheet" href="./css/glocery.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-container">
+            <p class="alert"></p>
+            <h3 class="title">grocery bud</h3>
+            <form id="form">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="input" 
+                        name="text" 
+                        placeholder="e.g.eggs"
+                    />
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+            <div class="list-container">
+                <ul>
+                    <li>
+                        <div class="list-item-container">
+                            <p></p>
+                            <div class="edit">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear-button">
+                <button>clear items</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/glocery.js"></script>
+</body>
+</html>

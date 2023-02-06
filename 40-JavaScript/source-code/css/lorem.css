@@ -1,0 +1,81 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    /* font family */
+    --open-sans : 'Open Sans', sans-serif;
+    --roboto-sans : 'Roboto', sans-serif;
+
+    /* font-size */
+    --large-size: 1.750em;
+    --medium-response-size: 1.250em;
+    --medium-size: 1.250rem;
+    --small-size: 0.875em;
+
+    /* color */
+    --white-color: #fff;
+    --black-color: #000;
+    --main-color: #49A6E9;
+    --bg-color: #F1F5F8;
+    --content-text-color: #617d98;
+    --dark-color: #063251;
+}
+html, body {
+    background: var(--bg-color);
+}
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+.container > h3 {
+    font-size: var(--medium-response-size);
+    font-weight: 600;
+    font-family: var(--roboto-sans);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.input-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.input-value > label {
+    font-family: var(--open-sans);
+    font-size: var(--medium-size);
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+}
+.input-value input#paragraphs {
+    width: 64px; height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+input#paragraphs {
+    font-size: var(--medium-size);
+}
+button.submit {
+    background: var(--main-color);
+    font-size: var(--small-size);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: var(--black-color);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    cursor: pointer;
+}
+.result {
+    font-size: var(--small-size);
+    font-family: var(--open-sans);
+    color: var(--content-text-color);
+    letter-spacing: .1.6rem;
+    line-height: 1rem;
+    padding-bottom: 2rem;
+}
+@media screen and (min-width:800px) {
+    .container {
+        font-size: 22.4px;
+    }
+}

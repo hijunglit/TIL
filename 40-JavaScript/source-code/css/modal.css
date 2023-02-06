@@ -1,0 +1,100 @@
+@import "reset.css";
+
+:root {
+/* color */
+--white-color: #fff;
+--black-color: #000;
+--main-color: #49A6E9;
+--bright-red-color:#EE4B2B;
+}
+
+.bg-container {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    background: center / cover no-repeat url("https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg");
+}
+
+.banner-container {
+    width: 620px;
+    padding: 4em 0;
+    align-self: center;
+    justify-self: center;
+    background: var(--white-color);
+    text-align: center;
+    border-radius: 6px;
+}
+.banner-container > h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.banner-container button.open-modal {
+    color: var(--white-color);
+    background: var(--main-color);
+    border-radius: 6px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 1.250em;
+    font-weight: 400px;
+    letter-spacing: .2rem;
+    margin-top: 1.750em;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.banner-container button.open-modal:hover {
+    background: var(--white-color);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.modal-container {
+    position: fixed;
+    width: 100%; min-height: 100vh;
+    display: grid;
+    align-self: center;
+    
+}
+.modal-overlay {
+    position: fixed; 
+    top: 0; left: 0;
+    z-index: 9;
+    width: 100%; min-height: 100%;
+    background: var(--main-color);
+    opacity: 0.5;
+}
+.modal-content {
+    position: absolute;
+    width: 620px; height: 260px;
+    text-align: center;
+    z-index: 99;
+    justify-self: center;
+    align-self: center;
+    background: var(--white-color);
+}
+.modal-content > .close-modal {
+    border: none; 
+    background: transparent;
+    color: hsl(0, 100%, 27%);
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    padding: 0.500em;
+}
+.modal-content > .close-modal>i{
+    transition: all 0.3s ease-in;
+}
+.modal-content > .close-modal>i:hover {
+    transform: scale(1.3);
+    color: var(--bright-red-color);
+}
+.modal-content p {
+    font-size: 1.750em;
+    font-weight: 600;
+    margin-top: 1.75em;
+}
+
+.hide {
+    display: none;
+}

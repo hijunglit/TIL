@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem</title>
+    <link rel="stylesheet" href="./css/lorem.css">
+</head>
+<body>
+    <div class="container">
+        <h3>tired of boring lorem ipsum?</h3>
+        <form class="form">
+            <div class="input-value">
+                <label for="paragraphs">paragraphs:</label>
+                <input 
+                    type="number" 
+                    name="paragraphs" 
+                    id="paragraphs" 
+                    placeholder="0" 
+                    min="0"
+                    max="10" 
+                    required />
+                <button type="submit" class="submit">generate</button>
+            </div>
+        </form>
+        <div class="lorem-content">
+        </div>
+    </div>
+    <script src="./js/loremArr.js"></script>
+    <script src="./js/lorem.js"></script>
+</body>
+</html>

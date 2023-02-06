@@ -1,0 +1,93 @@
+@import "reset.css";
+:root {
+    /* color */
+    --main-color: #49a6e9; 
+    --black-color: #000;
+    --white-color: #fff;
+
+    /* gab */
+    --item-gab: 0 0.5rem;
+    --list-gab: 0.5rem 1rem; 
+    --letter-spacing: 0.25rem;
+    
+    /* shadow */
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    box-shadow: var(--light-shadow);
+    background: var(--white-color);
+}
+#header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* small size */
+@media screen and (max-width: 800px) {
+    ul.socialIcon {
+        display: none;
+    }
+    nav.nav.closeMenu {
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+    }
+    nav.nav {
+        height: 10rem;
+    }
+    #header > .container, nav.nav > ul.navList {
+        display: block;
+    }
+    #header > .container, nav.nav > ul.navList li {
+        padding: var(--list-gab);
+    }
+
+    .navbarHeader button.toggleMenu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .navbarHeader button.toggleMenu:hover {
+        transform: rotate(90deg);
+        color: var(--black-color);
+    }    
+    .navbarHeader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+
+.logo > img {
+    height: 40px;
+}
+.nav li >a {
+    margin: var(--item-gab);
+    font-size: 1rem;
+    letter-spacing: var(--letter-spacing);
+    color: var(--black-color);
+}
+nav.nav>ul, .socialIcon {
+    display: flex;
+}
+
+.socialIcon li a {
+    margin: var(--item-gab);
+}
+.socialIcon li i {color: var(--main-color);}
+
+.navbarHeader>button {
+    border: 0;
+    background: transparent;
+    color: var(--main-color);
+    font-size: 1.5em;
+    display: none;
+    font-size: 1rem;
+}

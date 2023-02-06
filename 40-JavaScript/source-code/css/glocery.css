@@ -1,0 +1,87 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    /* color */
+    --white-color: #fff;
+    --black-color: #000;
+    --bg-color: #F1F5F8;
+    --bluish-color: #A5D5F8;
+    --fluorescence-color: #25BB32;
+    --cherry-color: #E66B6B;
+
+    /* font family*/
+    --open-sans : 'Open Sans', sans-serif;
+    --roboto-sans : 'Roboto', sans-serif;
+
+    /* font size */
+    --title-size: 1.750em;
+    --medium-size: 0.875em;
+    --small-size: 0.850em;
+    --xsmall-size: 0.700em;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;    
+    width: 100%;
+    background: var(--bg-color);
+}
+.content-container {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    background: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px #ccc, 2px 2px 5px #ccc;
+    padding: 3rem 0;
+    transition: all 0.3s ease-in-out;
+}
+.title {
+    font-family: var(--roboto-sans);
+    font-weight: 600;
+    font-size: var(--title-size);
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+.form {
+    padding-bottom: 3rem;
+}
+.input-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.input-container  > #input {
+    width: 80%;
+    background: var(--bg-color);
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding: 8px 12px;
+}
+.input-container button {
+    width: 20%;
+    height: 30px;
+    background: var(--bluish-color);
+    border: none;
+    border-radius: 0 6px 6px 0;
+    text-transform: capitalize;
+    font-size: var(--small-size);
+    letter-spacing: .2rem;
+}
+.clear-button > button{
+    border: none;
+    background: transparent;
+    color: var(--cherry-color);
+    text-transform: capitalize;
+    font-size: var(--small-size);
+    letter-spacing: .2rem;
+}
+
+@media screen and (min-width:630px) {
+    .content-container {
+        width: 560px;
+    }
+}
