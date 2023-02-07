@@ -19,6 +19,9 @@
     --small-size: 0.850em;
     --xsmall-size: 0.700em;
 }
+button {
+    cursor: pointer;
+}
  
 .container {
     display: flex;
