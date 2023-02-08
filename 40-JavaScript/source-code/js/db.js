@@ -1,3 +1,4 @@
+/*****  menu  *****/
 const menus = [
     {
         id:1,
@@ -83,3 +84,10 @@ const menus = [
 ];
 
 const categoryList = ["all", "breakfast", "lunch", "shakes", "dinner"];
+
+/*****   slider   *****/
+const sliderImages = [
+    "https://vannilla-js-basic-project-15-slider.netlify.app/img-1.jpeg",
+    "https://vannilla-js-basic-project-15-slider.netlify.app/img-2.jpeg",
+    "https://vannilla-js-basic-project-15-slider.netlify.app/person-1.jpeg",
+]
