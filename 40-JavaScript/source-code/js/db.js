@@ -88,6 +88,7 @@ const categoryList = ["all", "breakfast", "lunch", "shakes", "dinner"];
 /*****   slider   *****/
 const sliderImages = [
     "https://vannilla-js-basic-project-15-slider.netlify.app/img-1.jpeg",
+    "https://i.pinimg.com/736x/11/a8/cf/11a8cf32f9eb9685824a1c06d584f877.jpg",
     "https://vannilla-js-basic-project-15-slider.netlify.app/img-2.jpeg",
-    "https://vannilla-js-basic-project-15-slider.netlify.app/person-1.jpeg",
+    "https://i.pinimg.com/564x/1f/16/27/1f1627d5799d0cfa4122817aff05234d.jpg"
 ]

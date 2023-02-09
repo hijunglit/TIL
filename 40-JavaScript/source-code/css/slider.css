@@ -1,5 +1,6 @@
 @import url("reset.css");
 
+
 @media  screen and (min-width:576px) {
     
 }
@@ -11,35 +12,37 @@
 @media  screen and (min-width:992px) {
     
 }
-.img-container {
-    margin: 3rem 0;
-}
-.img-list {
+
+.slide {
     position: relative;
-    width: 80vw;
-    height: 40vh;
-    display: flex;
-    margin: 0 auto;
-    border-radius: 6px;
-    border: 4px solid #49a6e9;
+    width: 80vw; height: 40vh;
+    border-radius: 6px; border: 4px solid #49a6e9;
     overflow: hidden;
+    margin: 0 auto;
 }
-.img-list li {
+.slide li {
     position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.img-list li>img {
     width: 100%; height: 100%;
+    transition: all 0.3s ease-in-out;
 }
+.slide li > img {
+    height: 100%; width: 100%;
+}
+.slide li:nth-child(1){left: 0;} 
+.slide li:nth-child(2){left: 100%;}
+.slide li:nth-child(3){left: 300%;}
+.slide li:nth-child(4){left: 400%;}
 
 .remote-container {
     text-align: center;
-    text-transform: capitalize;
 }
 .remote-container span {
     cursor: pointer;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 1rem;
 }
+
 .btn.none {
     display: none;
 }
