@@ -12,6 +12,7 @@ sql 마스터 클래스
    - LIKE, %(와일드카드)
    - NOT LIKE
    - \_\_\_(under score)
+   - IN, NOT IN
 
 #### SELECT CASE
 
